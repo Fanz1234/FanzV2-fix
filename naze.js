@@ -70,7 +70,7 @@ const hariiini = moment.tz('Asia/Jakarta').format('DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© GabutBot\nYoutube/Sc :\nhttps://www.youtube.com/channel/UCUAdKiNCnt6mpGD94okTaoQ/')  //ubah di config biar ngk emror
+const nyoutube = ('© FanzBotzz')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 global.prem = require("./lib/premium")
@@ -280,7 +280,7 @@ const sendStickerFromUrl = async(to, url) => {
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":`${ytname}`, "h": `Hmm`,'seconds': '359996400', 'caption': `${ytname}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `${ytname}`,jpegThumbnail: await reSize(thumb, 100, 100)}}}
 		const floc2 = {key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `${ytname}`,"h": `Hmm`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
-		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': `${ytname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ytname,;;;\nFN:ytname\nitem1.TEL;waid=6285875158363:6285875158363\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': await reSize(thumb, 100, 100), thumbnail: await reSize(thumb, 100, 100),sendEphemeral: true}}}
+		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': `${ytname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ytname,;;;\nFN:ytname\nitem1.TEL;waid=6285812373011:6285812373011\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': await reSize(thumb, 100, 100), thumbnail: await reSize(thumb, 100, 100),sendEphemeral: true}}}
 	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": `${ytname}`,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": await reSize(thumb, 100, 100),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 		
 
@@ -372,7 +372,7 @@ jumlahharian = `${dataa.value}`
                     var ini_name = get_result.name
                     var description = get_result.description
                     ini_txt = `${ini_name} - ${description}\n\n`
-                    ini_txt += "*Sekian dan terima gaji. Akinator by GabutBot*"
+                    ini_txt += "*Sekian dan terima gaji. Akinator by Fanz*"
                     await naze.sendImage(m.chat, get_result.image, ini_txt, m).then(() => {
                         delete akinator[m.sender.split('@')[0]]
                         fs.writeFileSync("./src/akinator.json", JSON.stringify(akinator))
@@ -1431,7 +1431,7 @@ break
             case 'setowner': {
                if (!isCreator) throw mess.owner
                if (m.text.includes('@')) return m.reply(`*Invalid!*\n\n*Pake Nomer Woy*\n*Jangan Pakai Tag!*`)
-               if (!text) throw `Example : ${prefix + command} 6285875158363`
+               if (!text) throw `Example : ${prefix + command} 6285812373011`
               global.owner = text
               global.ownernomer = text
               m.reply(`Owner berhasil diubah menjadi\n\n⭔ Owner : ${global.owner}\n⭔ OwnerNumber : ${global.ownernomer}`)
@@ -4200,20 +4200,20 @@ let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu'
             case 'sponsor': {
 				if (!isRegistered) return m.reply('Kamu belum daftar! Silahkan daftar dengan cara #daftar nama|umur!')			
             if (!m.isGroup) throw mess.group
-            let qontak = `6285718971848@s.whatsapp.net`
-let dana = `6281911500445@s.whatsapp.net`
-let shopeeotp = `6285574670796@s.whatsapp.net`
-let shopee = `622150996855@s.whatsapp.net`
-let tokopedia = `6281197911081@s.whatsapp.net`
-let smartfrend = `628881212888@s.whatsapp.net`
-let getcontact = `447990653714@s.whatsapp.net`
-let facebook = `447710173736@s.whatsapp.net`
-let pasarpolis = `6287700178000@s.whatsapp.net`
-let kominfo = `628119224545@s.whatsapp.net`
-let alfamart = `628111500959@s.whatsapp.net`
+            let qontak = `6285812373011@s.whatsapp.net`
+let dana = `-@s.whatsapp.net`
+let shopeeotp = `-@s.whatsapp.net`
+let shopee = `-@s.whatsapp.net`
+let tokopedia = `-@s.whatsapp.net`
+let smartfrend = `-@s.whatsapp.net`
+let getcontact = `-@s.whatsapp.net`
+let facebook = `-@s.whatsapp.net`
+let pasarpolis = `-@s.whatsapp.net`
+let kominfo = `-@s.whatsapp.net`
+let alfamart = `-@s.whatsapp.net`
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*Bot by GabutBot Dev* 
+            let jawab = `*Bot by FanzBotzz* 
 -Creator :  @${ownernya.split('@')[0]}\n-Lu : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}\n- :  @${qontak.split('@')[0]}\n- :  @${dana.split('@')[0]}\n- :  @${shopeeotp.split('@')[0]}\n- :  @${shopee.split('@')[0]}\n- :  @${tokopedia.split('@')[0]}\n- :  @${smartfrend.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${facebook.split('@')[0]}\n- :  @${pasarpolis.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${kominfo.split('@')[0]}\n- :  @${alfamart.split('@')[0]}`
             let ments = [ownernya, me, ini_mark, qontak, dana, shopeeotp, shopee, tokopedia, smartfrend, getcontact, facebook, pasarpolis, kominfo, alfamart]
             let buttons = [
